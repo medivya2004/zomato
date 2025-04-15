@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>ZOMATO HOME</title>
+	<style>
+		*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width:100%;
+        }
+		#header-img{
+			position: relative;
+			width: 100%;
+			height: 320px;
+			background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXAH9YOtMVeZiv6QDlrwaHJiaaY-78Fogn7g&usqp=CAU');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		#header{
+			width: 100%;
+			height: 60px;
+		}
+		.nav-menu{
+			width: 60%;
+			height: 60px;
+		}
+		.zomato{
+			display:block;
+			font-weight: bolder;
+			color: white;
+			text-align: center;
+			font-size: 68px;
+			margin: 0;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.header{
+			margin-top:100px;
+		}
+		.nav-link{
+			border-bottom: 0px solid black;
+			transition: border-bottom 0.3s;
+			cursor: pointer;
+		}
+		.nav-link:hover{
+			border-bottom: 5px solid white;
+		}
+		.search-box{
+			width:50%;
+			height:60px;
+			background-color:white; 
+			border:none;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			padding-left: 20px;
+			outline: none;
+			font-weight: bold; 
+			font-size: 18px;
+
+
+		}
+		.search-btn{
+			width:130px;
+			color:white; 
+			background-color:red; 
+			border:none;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			
+			
+			font-weight: bold; 
+			font-size: 20px;
+			
+		}
+		#second-section{
+			margin-top:50px;
+			margin-bottom:50px;
+
+		}
+		.card{
+			width: 100%;
+			height: 100px;
+			background-color: white;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 1px 1px 10px #ccc;
+			transition: box-shadow 0.3s;
+			margin-bottom: 10px;
+			
+		}
+		.rounded{border-radius:20px;}
+		.card-hover{
+			box-shadow: absolute;;
+			background-repeat: white;
+			height: 50px;
+			width: 100%;
+			margin-top: 150px;
+
+		}
+		#popular-location{
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+		}
+		.popular-heading{
+			font-size: 40px;
+			color: black;
+		}
+		.locations-div{
+			width: 100%;
+			height: 60px;
+			background-color: white;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			cursor: pointer;
+
+		}
+		.locations-div:hover
+		{
+			box-shadow: 1px 1px 5px #ccc;
+		}
+
+         {
+	       margin-top: -40px;
+         }
+
+
+#get-zomato-app{
+	margin-top:50px;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(234,241,130,0,1); 
+}
+.email-input{
+	width: 250px;
+	height: 40px;
+	padding-left:10px;
+	border: 1px solid #ccc;
+	outline:none;
+	border-radius: 10px;
+	background-color: white; 
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="header-img">
+		<header>
+			<div class="d-flex justify-content-center">
+				<div class="nav-menu">
+					<p class="float-left text-white h6 nav-link">Get the app</p>
+					<p class="float-right text-white h6 nav-link">Sing up</p>
+					<p class="text-center text-white  h6 nav-link">Login</p>
+					
+				</div>
+				
+			</div>
+		</header>
+		<div class="container">
+			<div class="d-flex justify-content-center header-flex">
+				<p class="zomato">Zomato</p>
+				
+			</div>
+			<div class="d-flex justify-content-center mt-4">
+				<input type="text" placeholder="Search for dishes or cuisines..."class="search-box">
+				<button class="search-btn">Search</button>
+			</div>	
+		</div>	
+	</div>
+	<section id="second-section">	
+		<div class="container">
+			<div class="row fs-1">
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/chains/0/34150/6bd2bf58f467fc660e0ab515b868bf36_o2_featured_v2.jpg"height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center "> Online Order</p>
+						</div>	 
+					</div>
+				</diV>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src="https://b.zmtcdn.com/data/pictures/chains/0/18416840/297e6c82fbf1b14832189765dd0bdcc5_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>
+						</div>	 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src="https://b.zmtcdn.com/data/pictures/chains/2/18349892/81cab239d11c646e76cc35b01b25c180_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src="https://b.zmtcdn.com/data/pictures/chains/1/310301/0bb4ccbc6a9fb81b05c4870715419519_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center">Online Order</p>	
+						</div> 
+					</div>	
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/6/20457286/2327fc16609788f27005475da7b69a38_featured_v2.jpg"height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center">Family Hotel</p>	
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/7/47967/40f3079cb3f1249b3260d6a242b817d8_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center">Night Life</p>	
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/3/20608143/901b558971f153b0da165b99befaa03e_featured_v2.jpg  "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6">
+					<div class="card">
+						<img src="https://b.zmtcdn.com/data/pictures/2/19268542/4e6f37acfab4b53faf883d29930432af_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center">Night Life</p>	
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src="  https://b.zmtcdn.com/data/pictures/3/20509313/0ca5271a271ce517073716c926a298dc_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center">5 star Hotel</p>	
+						</div>	 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/1/20289421/5c8b1d7cd0ed2fc17c88316d68fb55fa_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div>	 
+					</div>	
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src="https://b.zmtcdn.com/data/pictures/3/20626783/9d5c0f2d5ba5c6e5a1d64df2f023f6bf_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/chains/5/18245975/794d1af0749c271c7d52b2f8c865ecae_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div> 
+					</div>
+				</div>
+					<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/chains/3/18216863/8be9fb314f005ee33d42a82811a294f2_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div> 
+					</div>
+				</div>
+					<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/chains/5/32465/ec37a79363ae4ea88c3be9ccd7989873_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/pictures/chains/1/19015111/b62a5cf0ae92446aef6425255d0b6890_o2_featured_v2.jpg "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>	
+						</div> 
+					</div>
+				</div>
+					<div class="col-lg-3 mt-5 col-12 col-sm-6 mb-5">
+					<div class="card">
+						<img src=" https://b.zmtcdn.com/data/dish_images/d9766dd91cd75416f4f65cf286ca84331634805483.png "height="100%"width="100%"class="rounded">
+						<div class="card-footer">
+							<p class="h4 m-0 mt-2 text-center"> Online Order</p>
+						</div>
+					</div>
+				</div>
+</div>
+		</div>	
+	</section>
+	<section id="popular-locations">
+		<div class="container">
+			<div class="d-flex justify-content-center">
+				<p class="popular-heading">Popular location in and around <span class="font-weight-bold">Kolkata</span></p>	
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-4">
+					<div class="d-flex locations-div">
+						<p class="m-0 ml-3  text-center h5 mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="d-flex locations-div">
+						<p class="m-0 ml-3 h5 text-center mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+				</div>
+					<div class="col-md-4">
+						<div class="d-flex locations-div">
+						<p class="m-0 ml-3 text-center h5 mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+					</div>	
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-4">
+					<div class="d-flex text-align-items-center locations-div">
+						<p class="m-0 ml-3 h5 mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="d-flex text-align-items-center locations-div">
+						<p class="m-0 ml-3 h5 mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+				</div>
+					<div class="col-md-4 ">
+						<div class="d-flex  text-align-items-center locations-div">
+						<p class="m-0 ml-3 h5 mt-3">Parkstreet Area</p>
+						<i class="fa fa-angle-right ml-auto mr-4"style="font-size:20px !important;margin-top:18px;"></i>	
+					</div>
+					</div>	
+			</div>
+		</div>
+	</section>
+	<section  id="get-zomato-app">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-block d-md-flex mt-4 ">
+					<img src="https://play-lh.googleusercontent.com/E5iGDw8H2YKhCNC42xeaSRwSXZYgzz_HNV-eCa-cqWL_PO6mP06XmlXD-j8LQhyfhg=w1052-h592-rw "class="ml-auto"width="250px"height="400px">	
+				</div>
+				<div class="col-md-6">
+					<p class="display-4 font-weight-bold mt-4">Get the zomato App</p>
+					<p>We will send you a link,open it on your phone to download the app</p>
+					<div class="d-flex">
+						<input type="text" placeholder="Email"class="email-input">
+						<button class="btn btn-danger ml-2">Get App</button>	
+					</div>
+					<p class="mt-3 text-muted">Download App from</p>
+					<div class="d-flex">
+						<img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png "width="250px"height="60px">	
+					</div>
+					<br>
+					<br>
+					<div class="d-flex">
+						<img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png "width="250px"height="60px">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+</body>
+</html>
